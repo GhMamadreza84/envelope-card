@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+<!-- آهنگ (مخفی شده) -->
+<audio id="wedding-song">
+    <source src="./music/song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- نوار اختصاصی موزیک در پایین صفحه -->
+<div id="custom-audio-bar">
+    <button id="play-pause-btn" onclick="toggleMusic()">
+        ⏸ توقف آهنگ
+    </button>
+</div>
+
+<!-- یک نگهدارنده برای ریسپانسیو شدن در موبایل -->
+<div class="scale-wrapper">
+    <!-- پاکت نامه -->
+    <div class="envelope-wrapper" id="env-wrapper" onclick="openEnvelope()">
+        <div class="envelope">
+            <!-- درب پاکت و مهر طلایی -->
+            <div class="flap">
+                <div class="wax-seal">Love</div>
+            </div>
+            
+            <div class="card">
+                <!-- عکس افقی شما که بعدا می‌چرخد -->
+                <img id="invite-image" src="./images/gandomro-ghadiri-postal-card.jpg" alt="کارت دعوت">
+            </div>
+            
+            <!-- بدنه جلویی پاکت -->
+            <div class="front"></div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
