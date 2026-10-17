@@ -24,26 +24,3 @@ function openEnvelope() {
         customBar.classList.add('show');
     }, 1500);
 }
-
-function toggleMusic() {
-    const song = document.getElementById('wedding-song');
-    
-    if (isPlaying) {
-        song.pause(); 
-        isPlaying = false;
-    } else {
-        song.play(); 
-        isPlaying = true;
-    }
-    
-    updateButtonText(); 
-}
-
-function updateButtonText() {
-    const btn = document.getElementById('play-pause-btn');
-    if (isPlaying) {
-        btn.innerHTML = '⏸ توقف آهنگ';
-    } else {
-        btn.innerHTML = '▶ پخش آهنگ';
-    }
-}
